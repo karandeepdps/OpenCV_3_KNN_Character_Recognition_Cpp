@@ -33,10 +33,44 @@ int main() {
     cv::Mat matTrainingImagesAsFlattenedFloats;
 
                                 // possible chars we are interested in are digits 0 through 9 and capital letters A through Z, put these in vector intValidChars
-    std::vector<int> intValidChars = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-                                       'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
-                                       'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-                                       'U', 'V', 'W', 'X', 'Y', 'Z' };
+    std::vector<int> intValidChars;
+
+                                       intValidChars.push_back('0');
+                                       intValidChars.push_back('1');
+                                       intValidChars.push_back('2');
+                                       intValidChars.push_back('3');
+                                          intValidChars.push_back('4');
+                                       intValidChars.push_back('5');
+                                       intValidChars.push_back('6');
+                                       intValidChars.push_back('7');
+                                          intValidChars.push_back('8');
+                                       intValidChars.push_back('9');
+                                       intValidChars.push_back('A');
+                                       intValidChars.push_back('B');
+                                       intValidChars.push_back('C');
+                                       intValidChars.push_back('D');
+                                       intValidChars.push_back('E');
+                                       intValidChars.push_back('F');
+                                          intValidChars.push_back('G');
+                                       intValidChars.push_back('H');
+                                       intValidChars.push_back('I');
+                                       intValidChars.push_back('J');
+                                          intValidChars.push_back('K');
+                                       intValidChars.push_back('L');
+                                       intValidChars.push_back('M');
+                                       intValidChars.push_back('N');
+                                       intValidChars.push_back('O');
+                                       intValidChars.push_back('P');
+                                       intValidChars.push_back('Q');
+                                       intValidChars.push_back('R');
+                                          intValidChars.push_back('S');
+                                       intValidChars.push_back('T');
+                                       intValidChars.push_back('U');
+                                       intValidChars.push_back('V');
+                                          intValidChars.push_back('W');
+                                       intValidChars.push_back('X');
+                                       intValidChars.push_back('Y');
+                                       intValidChars.push_back('Z');
 
     imgTrainingNumbers = cv::imread("training_chars.png");          // read in training numbers image
 
